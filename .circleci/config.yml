@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      - checkout
+      - run:
+          name: Compile Java Code
+          command: javac add.java
+      - run:
+          name: Run Java Program
+          command: java add
