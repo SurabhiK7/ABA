@@ -6,3 +6,4 @@ jdk:
 script:
   - javac add.java
   - java add
+#ntg
